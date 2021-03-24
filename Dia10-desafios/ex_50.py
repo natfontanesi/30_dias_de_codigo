@@ -14,11 +14,11 @@ for i in range (0,4):
     print("{}ª pessoa".format(i+1))
     lista_nome.append(input("Nome: "))
     lista_idade.append(int(input("Idade")))
-    lista_sexo.append(input("Sexo M/F: ").lower)
-    if lista_sexo[i]=='h' and lista_idade[i]>idade_homem:
+    lista_sexo.append(input("Sexo M/F: ").lower())
+    if lista_sexo[i]=='m' and lista_idade[i]>idade_homem:
         idade_homem=lista_idade[i]
         indice_homem=i
-    if lista_sexo[i] == 'm' and lista_idade[i]<20:
+    if lista_sexo[i] == 'f' and lista_idade[i]<20:
         count_mulheres +=1
     
     
